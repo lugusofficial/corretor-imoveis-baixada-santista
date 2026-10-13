@@ -137,3 +137,7 @@
 .services__icone .icon { width: 1.5rem; height: 1.5rem; }
 /* No celular a foto fica sozinha acima do texto: centralizada, para nao sobrar vazio a direita. */
 @media (max-width: 47.99em) { .about__foto { justify-self: center; } }
+
+/* Simbolo da marca (tres predios sobre a onda da orla) antes do nome. */
+.brand { display: inline-flex; align-items: center; gap: 0.5rem; }
+.brand__simbolo { width: 2rem; height: 2rem; color: var(--color-accent); flex: none; }
