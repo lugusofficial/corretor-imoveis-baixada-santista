@@ -128,3 +128,10 @@
 .about__grid { display: grid; gap: var(--space-7); align-items: center; }
 .about__foto { width: min(100%, 16rem); aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); }
 @media (min-width: 48em) { .about__grid { grid-template-columns: 20rem 1fr; } }
+
+/* Icone de cada servico, num circulo claro acima do titulo (pedido do cliente, 13/10). */
+.services__icone {
+  display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
+  background: var(--color-surface); color: var(--color-accent);
+}
+.services__icone .icon { width: 1.5rem; height: 1.5rem; }
