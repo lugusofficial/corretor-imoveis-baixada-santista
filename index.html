@@ -41,12 +41,15 @@
   </div>
 </header>
 <main id="main">
-  <section class="hero hero--split-right" id="top" aria-labelledby="hero-title">
-    <!-- hero layout split-right: Media on the left with large radius. Text column on the right with h1 supporting sentence and CTA. On mobile media goes below the text. CTA: One primary button plus an optional plain text link. Media: placeholder required. | words <= 45 | exactly one primary CTA (the header already has one; here it is the page's) -->
+  <section class="hero hero--video" id="top" aria-labelledby="hero-title">
+    <!-- Video da orla de Praia Grande gerado localmente (Wan 2.2), sem som,
+         autoplay mudo e em loop, a pedido do cliente (13/10). -->
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/orla-pg.jpg" aria-hidden="true">
+      <source src="assets/orla-pg.webm" type="video/webm">
+      <source src="assets/orla-pg.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veu" aria-hidden="true"></div>
     <div class="hero__grid">
-      <div class="hero__media">
-        <img src="assets/corretor.svg" width="600" height="720" alt="Foto do corretor (fornecer): retrato com a chave do imóvel e os prédios da orla ao fundo">
-      </div>
       <div class="hero__text stack--lg">
         <p class="label">CRECI 000000 e CNAI 00000 (fornecer)</p>
         <h1 id="hero-title">Seu imóvel em Praia Grande, com a conta feita antes da visita</h1>
@@ -60,20 +63,20 @@
     <div class="container stack--lg">
       <div class="gallery__intro stack reveal">
         <h2 id="galeria-title">Imóveis da orla</h2>
-        <p class="muted">Os perfis mais procurados em Praia Grande e vizinhança. Cada oferta entra com fotos reais do imóvel. Consulte valores.</p>
+        <p class="muted">Os perfis mais procurados em Praia Grande e vizinhança. Imagens ilustrativas; cada oferta entra com fotos reais do imóvel. Consulte valores.</p>
       </div>
       <div class="gallery__grid">
         <figure class="gallery__item gallery__item--featured reveal">
-          <img src="assets/predio-frente-mar.svg" width="800" height="600" loading="lazy" alt="Foto de prédio frente mar em Praia Grande (fornecer)">
-          <figcaption>Apartamento frente mar, Boqueirão (confirmar)</figcaption>
+          <img src="assets/take1-orla.jpg" width="960" height="544" loading="lazy" alt="Prédios residenciais de frente para a praia, com coqueiros na avenida da orla (imagem ilustrativa)">
+          <figcaption>Prédios frente mar, Boqueirão (confirmar)</figcaption>
         </figure>
         <figure class="gallery__item reveal">
-          <img src="assets/casa.svg" width="600" height="450" loading="lazy" alt="Foto de casa com quintal (fornecer)">
-          <figcaption>Casa com quintal, Tupi (confirmar)</figcaption>
+          <img src="assets/take3-predios.jpg" width="960" height="544" loading="lazy" alt="Avenida da praia com coqueiros e prédios de apartamentos (imagem ilustrativa)">
+          <figcaption>Na avenida da praia, Guilhermina (confirmar)</figcaption>
         </figure>
         <figure class="gallery__item reveal">
-          <img src="assets/apartamento-compacto.svg" width="600" height="450" loading="lazy" alt="Foto de apartamento compacto perto da praia (fornecer)">
-          <figcaption>Compacto perto da praia, Guilhermina (confirmar)</figcaption>
+          <img src="assets/take2-ondas.jpg" width="960" height="544" loading="lazy" alt="Faixa larga de areia e mar com os prédios da orla ao fundo (imagem ilustrativa)">
+          <figcaption>A uma quadra da areia, Aviação (confirmar)</figcaption>
         </figure>
       </div>
       <p class="reveal"><a class="btn--link" href="https://wa.me/0000000000?text=Ol%C3%A1%21%20Pode%20me%20mandar%20a%20lista%20atualizada%20de%20im%C3%B3veis%3F%20Bairro%3A%20___%20Tipo%3A%20___">Pedir a lista atualizada no WhatsApp</a></p>

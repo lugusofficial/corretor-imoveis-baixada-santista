@@ -1,34 +1,25 @@
 /* Section styles for this site. Base rules and tokens live in base.css and tokens.css: use the custom properties, never raw values. */
 /* Style surfaces: No borders. One tinted surface for the contact section at most. No shadows. */
-/* Decorative effect allowed on this page (max one): One curved bleed image. The scroll reveal reuses a single keyframes block. */
+/* Decorative effect: the scroll reveal, a single keyframes block. The hero is a video since 13/10 (client request). */
 
-/* hero: split-right, media bleeds to the left edge with one curved corner */
-.hero { padding-block: var(--space-5) var(--section-gap); overflow: hidden; }
-.hero__grid {
-  display: grid;
-  gap: var(--space-7);
-  align-items: center;
-  width: min(100% - 2 * var(--gutter), var(--container));
-  margin-inline: auto;
+/* hero: video da orla ocupando a secao inteira, texto claro sobre um veu escuro */
+.hero--video {
+  position: relative; overflow: hidden; isolation: isolate;
+  min-height: clamp(32rem, 82svh, 46rem);
+  display: grid; align-items: center;
+  padding-block: var(--space-8);
+  background: var(--color-text);
 }
-.hero__text { order: -1; }
-.hero__text h1 { max-width: 14ch; }
-.hero__media img {
-  width: 100%;
-  border-radius: var(--radius-lg) var(--radius-pill) var(--radius-lg) var(--radius-lg);
-  transition: transform 600ms ease;
-}
-.hero__media:hover img { transform: scale(1.01); }
-@media (min-width: 64em) {
-  .hero__grid {
-    grid-template-columns: 6fr 5fr;
-    gap: var(--space-8);
-    width: auto;
-    margin-inline: 0 max(var(--gutter), (100% - var(--container)) / 2);
-  }
-  .hero__text { order: 0; }
-  .hero__media img { border-radius: var(--radius-sm) var(--radius-pill) var(--radius-lg) var(--radius-sm); }
-}
+.hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero__veu { position: absolute; inset: 0; z-index: -1; background: color-mix(in srgb, var(--color-text) 58%, transparent); }
+.hero__grid { width: min(100% - 2 * var(--gutter), var(--container)); margin-inline: auto; }
+.hero__text { max-width: 40rem; color: var(--color-bg); }
+.hero__text h1 { max-width: 14ch; color: var(--color-bg); }
+.hero__text .label, .hero__text .lead { color: var(--color-surface); }
+.hero__text .btn--primary { background: var(--color-bg); color: var(--color-text); }
+.hero__text .btn--primary:hover { background: var(--color-surface); }
+.hero__text .btn--link { color: var(--color-bg); }
+.hero__text .btn--link:hover { color: var(--color-surface); }
 
 /* gallery: gallery-featured */
 .gallery__intro p { max-width: 50ch; }
