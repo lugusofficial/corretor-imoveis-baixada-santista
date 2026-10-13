@@ -22,7 +22,8 @@
     raiz.classList.add('is-live');
     janela.scrollLeft = 0;
 
-    var porTela = function () { return largo.matches ? 2 : 1; };
+    // data-depo-um: um slide por vez sempre (o corretor divide a secao com a foto).
+    var porTela = function () { return largo.matches && !raiz.hasAttribute('data-depo-um') ? 2 : 1; };
     var ir = function (alvo) {
       var ultimo = Math.max(0, total - porTela());
       indice = alvo > ultimo ? 0 : (alvo < 0 ? ultimo : alvo);

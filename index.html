@@ -110,8 +110,10 @@
     </div>
   </section>
   <!-- Depoimentos de exemplo ate o cliente mandar os reais; a nota abaixo diz isso ao visitante. -->
-  <section class="section depo" id="depoimentos" aria-labelledby="depo-title" data-depo>
-    <div class="container stack--lg">
+  <section class="section depo" id="depoimentos" aria-labelledby="depo-title" data-depo data-depo-um>
+    <div class="container depo__grid">
+      <figure class="depo__foto reveal"><img src="assets/corretor-entrega.jpg" width="640" height="800" loading="lazy" alt="O corretor sorrindo no dia de uma entrega de chaves"><figcaption>Entrega de chaves</figcaption></figure>
+      <div class="stack--lg depo__corpo">
       <h2 id="depo-title" class="reveal">Quem já fechou comigo</h2>
       <div class="depo__janela" data-depo-janela tabindex="0" role="group" aria-labelledby="depo-title"><div class="depo__trilho" data-depo-trilho>
         <figure class="depo__item"><blockquote><p>Ele fez a conta do financiamento comigo antes da primeira visita. Fechei sabendo exatamente quanto ia pagar por mês.</p></blockquote><figcaption>Comprador na Guilhermina</figcaption></figure>
@@ -123,23 +125,27 @@
         <button type="button" class="depo__seta" data-depo-next><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg><span class="visually-hidden">Próximo depoimento</span></button>
       </p>
       <p class="muted depo__nota">Depoimentos de exemplo, trocados pelos reais dos clientes.</p>
+      </div>
     </div>
   </section>
   <section class="section section--about" id="sobre" aria-labelledby="sobre-title" data-layout="about-statement">
     <!-- about layout about-statement: One large sentence in display size (max 24 words) followed by two short paragraphs in a 60ch measure. No media. | words <= 120 | at most 1 primary CTA and 1 text link | no cards, no borders beyond hairlines, no icons before headings -->
-    <div class="container stack--lg">
+    <div class="container about__grid">
+      <img class="about__foto reveal" src="assets/corretor-retrato.jpg" width="480" height="480" loading="lazy" alt="Retrato do corretor, de terno cinza e camisa branca">
+      <div class="stack--lg">
       <h2 id="sobre-title" class="label reveal">Sobre mim</h2>
       <p class="display about__statement reveal">Corretor e avaliador de imóveis, formado em Administração.</p>
       <div class="about__body stack reveal">
         <p>Tenho MBA em finanças, então a conta do financiamento eu faço junto com você, sem pressa. Atendo em Praia Grande, Santos e São Vicente.</p>
         <p class="muted">CRECI 000000 <span aria-hidden="true">·</span> CNAI 00000</p>
       </div>
+      </div>
     </div>
   </section>
   <section class="section section--contact" id="contato" aria-labelledby="contato-title" data-layout="contact-whatsapp-first">
     <!-- contact layout contact-whatsapp-first: One large primary WhatsApp button with phone and email as plain links below. No form. | words <= 120 | at most 1 primary CTA and 1 text link | no cards, no borders beyond hairlines, no icons before headings -->
     <div class="container stack--lg contact__panel surface reveal">
-      <h2 id="contato-title">Me chama no WhatsApp</h2>
+      <div class="contact__quem"><img class="contact__avatar" src="assets/corretor-retrato.jpg" width="480" height="480" loading="lazy" alt=""><h2 id="contato-title">Me chama no WhatsApp</h2></div>
       <p class="lead">Diz o bairro e o tipo de imóvel que eu mando as opções.</p>
       <p><a class="btn btn--primary contact__cta" href="https://wa.me/0000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site.%20Procuro%20im%C3%B3vel%20no%20bairro%20___%2C%20tipo%20___%2C%20para%20comprar%20ou%20alugar%3A%20___"><svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>Chamar no WhatsApp</a></p>
       <ul class="contact__links cluster">

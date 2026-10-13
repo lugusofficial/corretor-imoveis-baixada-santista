@@ -63,7 +63,7 @@
 }
 
 /* about: about-statement */
-.section--about .container { max-width: 56rem; }
+.section--about .container { max-width: 64rem; }
 .about__statement { max-width: 24ch; color: var(--color-accent); }
 .about__body p { max-width: 60ch; }
 
@@ -123,3 +123,18 @@
 .depo__seta:hover { border-color: var(--color-accent); color: var(--color-accent); }
 .depo__seta--prev .icon { transform: scaleX(-1); }
 .depo__nota { font-size: var(--step--1); }
+
+/* Fotos do corretor (13/10, a pedido do cliente): retrato no sobre, avatar no
+   contato e a foto de entrega de chaves ao lado dos depoimentos. */
+.about__grid { display: grid; gap: var(--space-7); align-items: center; }
+.about__foto { width: min(100%, 16rem); aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); }
+@media (min-width: 48em) { .about__grid { grid-template-columns: 20rem 1fr; } }
+.contact__quem { display: flex; align-items: center; gap: var(--space-4); }
+.contact__avatar { width: 4.5rem; height: 4.5rem; border-radius: 50%; object-fit: cover; flex: none; }
+.depo__grid { display: grid; gap: var(--space-7); align-items: center; }
+.depo__foto { margin: 0; display: grid; gap: var(--space-3); }
+.depo__foto img { width: min(100%, 18rem); aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-lg); }
+.depo__foto figcaption { color: var(--color-muted); font-size: var(--step--1); }
+.depo__corpo { min-width: 0; }
+@media (min-width: 48em) { .depo__grid { grid-template-columns: minmax(16rem, 2fr) 3fr; } }
+[data-depo-um] .depo__item { flex-basis: 100%; }
