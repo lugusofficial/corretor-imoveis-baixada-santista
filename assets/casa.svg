@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="t">
+  <title id="t">Foto de casa com quintal (fornecer)</title>
+  <rect width="600" height="450" fill="#DCE5EC"/>
+  <circle cx="480" cy="90" r="44" fill="#F7F8F8" opacity="0.9"/>
+  <rect y="330" width="600" height="120" fill="#8FA89A"/>
+  <path d="M0 372 C140 360 260 384 420 368 S560 362 600 370 L600 450 L0 450 Z" fill="#6E8C7C"/>
+  <rect x="150" y="190" width="280" height="150" rx="8" fill="#F7F8F8"/>
+  <path d="M126 200 L290 96 L454 200 Z" fill="#2C4E6E" stroke="#2C4E6E" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="262" y="250" width="56" height="90" rx="6" fill="#5C7C99"/>
+  <circle cx="306" cy="298" r="4" fill="#E6DCCB"/>
+  <rect x="180" y="226" width="58" height="50" rx="6" fill="#9DB3C7"/>
+  <rect x="342" y="226" width="58" height="50" rx="6" fill="#9DB3C7"/>
+  <path d="M209 226 V276 M180 251 H238 M371 226 V276 M342 251 H400" stroke="#F7F8F8" stroke-width="4"/>
+  <rect x="270" y="340" width="40" height="110" fill="#E6DCCB"/>
+  <rect x="500" y="250" width="14" height="96" rx="5" fill="#8C5F45"/>
+  <circle cx="507" cy="232" r="46" fill="#6E8C7C"/>
+  <circle cx="480" cy="260" r="30" fill="#6E8C7C"/>
+  <circle cx="70" cy="320" r="34" fill="#6E8C7C"/>
+  <circle cx="100" cy="332" r="24" fill="#8FA89A"/>
+</svg>
