@@ -11,6 +11,20 @@
   background: var(--color-text);
 }
 .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+/* Sem autoplay (economia de bateria do iPhone) o Safari desenha um play por
+   cima do video. O botao some e o js/hero.js troca o video pelo webp animado. */
+.hero__video::-webkit-media-controls,
+.hero__video::-webkit-media-controls-start-playback-button { display: none !important; -webkit-appearance: none; }
+/* No celular o heroi enche a tela abaixo do cabecalho; a setinha avisa que a pagina continua. */
+@media (max-width: 55.99em) { .hero--video { min-height: max(32rem, calc(100svh - 4.25rem)); } }
+.hero__seta {
+  position: absolute; left: 50%; bottom: var(--space-5); transform: translateX(-50%);
+  display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
+  color: var(--color-bg); background: color-mix(in srgb, var(--color-text) 45%, transparent);
+}
+.hero__seta svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+@media (prefers-reduced-motion: no-preference) { .hero__seta svg { animation: seta 2.2s ease-in-out infinite; } }
+@keyframes seta { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(4px); } }
 .hero__veu { position: absolute; inset: 0; z-index: -1; background: color-mix(in srgb, var(--color-text) 58%, transparent); }
 .hero__grid { width: min(100% - 2 * var(--gutter), var(--container)); margin-inline: auto; }
 .hero__text { max-width: 40rem; color: var(--color-bg); }
