@@ -1,17 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <style>@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;600&amp;display=swap");</style>
   <rect width="1200" height="630" fill="#F7F8F8"/>
-  <g transform="translate(96 147) scale(7)">
-    <g fill="#2C4E6E">
-      <path d="M5 23.5 15 19v20H5z"/>
-      <path d="M18 13 31 6v33H18z"/>
-      <path d="M34 15.5A1.5 1.5 0 0 1 35.5 14h6a1.5 1.5 0 0 1 1.5 1.5V39h-9z"/>
-    </g>
-    <path d="M5 43.5c3 0 3-2.5 6.33-2.5s3.33 2.5 6.33 2.5 3.34-2.5 6.34-2.5 3.33 2.5 6.33 2.5 3.33-2.5 6.33-2.5S40 43.5 43 43.5" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linecap="round"/>
+  <path transform="translate(132 147) scale(7)" fill="#A68228" d="M2 38.2 46 38.2 46 40.8 2 40.8ZM7.5 38.2 22.5 14.2 37.5 38.2 34.08 38.2 22.5 19.67 10.92 38.2ZM12 22 15 22 15 28.94 12 33.74ZM11.2 20.2 15.8 20.2 15.8 22 11.2 22ZM19.6 30.4V29.2A2.9 2.9 0 0 1 25.4 29.2V30.4ZM19.6 31.6 21.9 31.6 21.9 36.6 19.6 36.6ZM23.1 31.6 25.4 31.6 25.4 36.6 23.1 36.6ZM25 12.8 29 12.8 29 22.15 25 15.75ZM30.2 10 34.2 10 34.2 30.47 30.2 24.07ZM35.4 7.2 39.4 7.2 39.4 36.9 38.22 36.9 35.4 32.39ZM36.5 11.2 36.5 12.5 38.3 12.5 38.3 11.2ZM36.5 14.6 36.5 15.9 38.3 15.9 38.3 14.6ZM36.5 18 36.5 19.3 38.3 19.3 38.3 18Z"/>
+  <text x="518" y="290" font-family="Figtree, 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="96" letter-spacing="1.9" fill="#161C22">Cilez Junior</text>
+  <g font-family="Figtree, 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="42" fill="#2C4E6E">
+    <text x="521" y="360">Corretor de imóveis</text>
+    <text x="521" y="414">em Praia Grande</text>
   </g>
-  <g font-family="Figtree, 'Segoe UI', Arial, sans-serif" font-weight="600" fill="#161C22" font-size="66">
-    <text x="508" y="290" font-size="84">Cilez Junior</text>
-    <text x="508" y="360" fill="#2C4E6E" font-size="44" font-weight="500">Corretor de imóveis</text>
-    <text x="508" y="414" fill="#2C4E6E" font-size="44" font-weight="500">em Praia Grande</text>
-  </g>
-  <rect x="510" y="448" width="72" height="6" rx="3" fill="#C9A227"/>
 </svg>

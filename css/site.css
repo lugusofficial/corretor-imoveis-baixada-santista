@@ -138,6 +138,7 @@
 /* No celular a foto fica sozinha acima do texto: centralizada, para nao sobrar vazio a direita. */
 @media (max-width: 47.99em) { .about__foto { justify-self: center; } }
 
-/* Simbolo da marca (tres predios sobre a onda da orla) antes do nome. */
+/* Simbolo da marca antes do nome: a casa com chamine e os predios da logo antiga do
+   corretor, redesenhada chapada em 13/10. Dourado da marca, 3.38:1 sobre o fundo. */
 .brand { display: inline-flex; align-items: center; gap: 0.5rem; }
-.brand__simbolo { width: 2rem; height: 2rem; color: var(--color-accent); flex: none; }
+.brand__simbolo { width: 2.25rem; height: 2.25rem; color: #A68228; flex: none; }

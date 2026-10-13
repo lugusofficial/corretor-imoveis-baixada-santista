@@ -1,8 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Símbolo: três prédios sobre uma onda">
-  <g fill="currentColor">
-    <path d="M5 23.5 15 19v20H5z"/>
-    <path d="M18 13 31 6v33H18z"/>
-    <path d="M34 15.5A1.5 1.5 0 0 1 35.5 14h6a1.5 1.5 0 0 1 1.5 1.5V39h-9z"/>
-  </g>
-  <path d="M5 43.5c3 0 3-2.5 6.33-2.5s3.33 2.5 6.33 2.5 3.34-2.5 6.34-2.5 3.33 2.5 6.33 2.5 3.33-2.5 6.33-2.5S40 43.5 43 43.5" fill="none" stroke="#C9A227" style="stroke:var(--logo-acento,#C9A227)" stroke-width="2.6" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Símbolo: casa com chaminé e janela em arco, com três prédios ao lado">
+  <path fill="currentColor" d="M2 38.2 46 38.2 46 40.8 2 40.8ZM7.5 38.2 22.5 14.2 37.5 38.2 34.08 38.2 22.5 19.67 10.92 38.2ZM12 22 15 22 15 28.94 12 33.74ZM11.2 20.2 15.8 20.2 15.8 22 11.2 22ZM19.6 30.4V29.2A2.9 2.9 0 0 1 25.4 29.2V30.4ZM19.6 31.6 21.9 31.6 21.9 36.6 19.6 36.6ZM23.1 31.6 25.4 31.6 25.4 36.6 23.1 36.6ZM25 12.8 29 12.8 29 22.15 25 15.75ZM30.2 10 34.2 10 34.2 30.47 30.2 24.07ZM35.4 7.2 39.4 7.2 39.4 36.9 38.22 36.9 35.4 32.39ZM36.5 11.2 36.5 12.5 38.3 12.5 38.3 11.2ZM36.5 14.6 36.5 15.9 38.3 15.9 38.3 14.6ZM36.5 18 36.5 19.3 38.3 19.3 38.3 18Z"/>
 </svg>
