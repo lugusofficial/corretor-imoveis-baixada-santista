@@ -135,3 +135,5 @@
   background: var(--color-surface); color: var(--color-accent);
 }
 .services__icone .icon { width: 1.5rem; height: 1.5rem; }
+/* No celular a foto fica sozinha acima do texto: centralizada, para nao sobrar vazio a direita. */
+@media (max-width: 47.99em) { .about__foto { justify-self: center; } }
