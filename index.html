@@ -24,6 +24,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Sua Marca","url":"https://lugusofficial.github.io/corretor-imoveis-baixada-santista/","telephone":"+0000000000","email":"contato@example.com","address":{"@type":"PostalAddress","streetAddress":"Rua Exemplo, 123","addressLocality":"Praia Grande","addressRegion":"SP","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Praia Grande"},{"@type":"City","name":"Santos"},{"@type":"City","name":"São Vicente"}],"knowsAbout":["Compra e venda de imóveis","Locação residencial","Financiamento imobiliário","Avaliação de imóveis"]}</script>
 <script src="js/main.js" defer></script>
 <script src="js/hero.js" defer></script>
+<script src="js/depoimentos.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
@@ -106,6 +107,22 @@
           <p class="muted">Para quem procura onde morar e para quem tem imóvel para alugar.</p>
         </li>
       </ul>
+    </div>
+  </section>
+  <!-- Depoimentos de exemplo ate o cliente mandar os reais; a nota abaixo diz isso ao visitante. -->
+  <section class="section depo" id="depoimentos" aria-labelledby="depo-title" data-depo>
+    <div class="container stack--lg">
+      <h2 id="depo-title" class="reveal">Quem já fechou comigo</h2>
+      <div class="depo__trilho" data-depo-trilho tabindex="0" role="group" aria-labelledby="depo-title">
+        <figure class="depo__item"><blockquote><p>Ele fez a conta do financiamento comigo antes da primeira visita. Fechei sabendo exatamente quanto ia pagar por mês.</p></blockquote><figcaption>Comprador na Guilhermina</figcaption></figure>
+        <figure class="depo__item"><blockquote><p>Vendi meu apartamento pelo valor que ele avaliou, sem ficar meses parado.</p></blockquote><figcaption>Proprietária no Boqueirão</figcaption></figure>
+        <figure class="depo__item"><blockquote><p>Respondia rápido no WhatsApp e só mandava imóvel que tinha a ver com o que eu pedi.</p></blockquote><figcaption>Inquilino na Aviação</figcaption></figure>
+      </div>
+      <p class="depo__controles">
+        <button type="button" class="depo__seta depo__seta--prev" data-depo-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg><span class="visually-hidden">Depoimento anterior</span></button>
+        <button type="button" class="depo__seta" data-depo-next><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg><span class="visually-hidden">Próximo depoimento</span></button>
+      </p>
+      <p class="muted depo__nota">Depoimentos de exemplo, trocados pelos reais dos clientes.</p>
     </div>
   </section>
   <section class="section section--about" id="sobre" aria-labelledby="sobre-title" data-layout="about-statement">

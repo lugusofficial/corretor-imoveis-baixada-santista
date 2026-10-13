@@ -98,3 +98,25 @@
 
 /* Icone de marca (WhatsApp) e preenchido, nao de traco como os outros */
 .icon--fill { fill: currentColor; stroke: none; }
+
+/* Depoimentos em slides: um por tela no celular, dois lado a lado no desktop. */
+.depo__trilho {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 100%; column-gap: var(--space-6);
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
+}
+.depo__trilho::-webkit-scrollbar { display: none; }
+.depo__trilho:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+@media (min-width: 56em) { .depo__trilho { grid-auto-columns: calc((100% - var(--space-6)) / 2); } }
+.depo__item { scroll-snap-align: start; margin: 0; display: grid; gap: var(--space-4); align-content: start; }
+.depo__item blockquote { margin: 0; font-family: var(--font-display); font-size: var(--step-2); line-height: 1.3; color: var(--color-text); }
+.depo__item blockquote p::before { content: "\201C"; }
+.depo__item blockquote p::after { content: "\201D"; }
+.depo__item figcaption { color: var(--color-muted); }
+.depo__controles { display: flex; gap: var(--space-3); }
+.depo__seta {
+  display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
+  border: 1px solid var(--color-rule); background: transparent; color: var(--color-text); cursor: pointer;
+}
+.depo__seta:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.depo__seta--prev .icon { transform: scaleX(-1); }
+.depo__nota { font-size: var(--step--1); }
