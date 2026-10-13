@@ -66,7 +66,6 @@
 .section--about .container { max-width: 56rem; }
 .about__statement { max-width: 24ch; color: var(--color-accent); }
 .about__body p { max-width: 60ch; }
-.about__quote { font-style: italic; font-size: var(--step-1); color: var(--color-muted); padding-top: var(--space-4); }
 
 /* contact: contact-whatsapp-first, the page's single tinted surface */
 .contact__cta { font-size: var(--step-1); min-height: 3.75rem; padding-inline: var(--space-7); }
@@ -96,3 +95,6 @@
   from { opacity: 0; transform: translateY(var(--space-6)); }
   to { opacity: 1; transform: none; }
 }
+
+/* Icone de marca (WhatsApp) e preenchido, nao de traco como os outros */
+.icon--fill { fill: currentColor; stroke: none; }
